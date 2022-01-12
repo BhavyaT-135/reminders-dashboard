@@ -7,7 +7,7 @@ import Navbar from '../Navbar/Navbar.js';
 import Card from '../Card/Card.js';
 import '../../custom.css';
 import ModalForm from '../ModalForm/ModalForm';
-
+import Header from '../Header/Header.js';
 
 class App extends Component {
 
@@ -58,6 +58,7 @@ class App extends Component {
                     <Navbar />
                 </div>
                 <div className='app-right'>
+                    <Header />
                     <div className="from-inline reminder-form">
                         <div className="from-group">
                             <input

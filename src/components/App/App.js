@@ -56,6 +56,7 @@ class App extends Component {
                             Clear Reminders
                         </button>
                         <Card />
+                        <Card />
                     </div>
                 </div>
             </div >

@@ -89,3 +89,12 @@
     width: 40px;
     height: 30px;
 }
+
+.dates {
+    display: flex;
+    flex: 1;
+}
+
+.update_button {
+    margin-left: 550px;
+}

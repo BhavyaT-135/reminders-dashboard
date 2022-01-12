@@ -49,6 +49,9 @@ const Card = () => {
                             </div>
                             <div className='e-date'>19 February 2020</div>
                         </div>
+                        <div className='update_button'>
+                            <button class="ui green button">Update</button>
+                        </div>
                     </div>
                     <div className="buttons">
                         <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">

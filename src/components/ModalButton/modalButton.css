@@ -1,12 +1,12 @@
-.button-danger {
+.button-success{
     top: 121px;
     left: 350px;
-    background-color: rgb(236, 119, 119);
+    background-color: #32CD32;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 241px;
     height: 55px;
     font-weight: 700;
+    font-size: 18px;
     color: white;
-    display: none;
 }

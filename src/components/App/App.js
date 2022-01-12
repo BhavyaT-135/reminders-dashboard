@@ -1,27 +1,34 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import moment from 'moment';
 import '../../index.css';
 import Navbar from '../Navbar/Navbar.js';
 import Card from '../Card/Card.js';
 import '../../custom.css';
 import ModalForm from '../ModalForm/ModalForm';
 import Header from '../Header/Header.js';
+import ModalButton from '../ModalButton/ModalButton.js';
 
 class App extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            text: '',
-            dueDate: ''
+            isModalOn: false,
         }
     }
 
+    setIsModalOn = () => {
+        this.setState({ isModalOn: true })
+    }
+
+    setIsModalOff = () => {
+        this.setState({ isModalOn: false })
+    }
+
     render() {
-        console.log('this.props', this.props);
+        //console.log('State', this.state);
         return (
             <div className="App">
+                <ModalForm isModalOn={this.state.isModalOn} setIsModalOff={this.setIsModalOff} />
                 <div className='app-left'>
                     <Navbar />
                 </div>
@@ -41,11 +48,7 @@ class App extends Component {
                             />
                         </div>
 
-                        <button
-                            type="button"
-                            className="button-success">
-                            Add New Schedule
-                        </button>
+                        <ModalButton setIsModalOn={this.setIsModalOn} />
                         <button
                             type="button"
                             className="button-danger"
@@ -55,18 +58,10 @@ class App extends Component {
                         <Card />
                     </div>
                 </div>
-                <ModalForm />
             </div >
 
         );
     }
-}
-
-function mapStateToProps(state) {
-    return {
-        reminders: state
-    }
-
 }
 
 export default App;

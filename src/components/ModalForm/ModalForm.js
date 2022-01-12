@@ -14,7 +14,7 @@ const ModalForm = () => {
                             padding: 'none',
                             borderRadius: '15px',
                             width: '70%',
-                            height: '75%',
+                            height: 'fit-content',
                             marginLeft: '180px',
                             marginTop: '50px'
                         }

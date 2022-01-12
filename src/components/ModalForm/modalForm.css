@@ -1,0 +1,64 @@
+.mf-title {
+    margin-top: 20px;
+    font: normal 700 22px Poppins;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    background-color: #BCBCBC;
+    width: 100%;
+}
+
+.mf-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    font: normal 700 20px Poppins;
+    color: #2F2F2F;
+}
+
+.ui.input {
+    margin-left: 30px;
+    width: 95%;
+    margin-top: 5px;
+    height: 60px;
+    font: normal 16px Poppins;
+    color: #BCBCBC;
+    margin-bottom: 20px;
+}
+
+.three-dates {
+    display: flex;
+    width: 95%;
+}
+
+.name-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.mf-buttons {
+    display: flex;
+    flex: 1;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.button-success.close {
+    background-color: #BCBCBC;
+    color: #2F2F2F;
+    font: normal 600 20px Poppins;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.button-success.create {
+    font: normal 600 20px Poppins;
+    width: 50%;
+    margin-left: 30px;
+}
+

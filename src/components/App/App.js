@@ -6,6 +6,7 @@ import '../../index.css';
 import Navbar from '../Navbar/Navbar.js';
 import Card from '../Card/Card.js';
 import '../../custom.css';
+import ModalForm from '../ModalForm/ModalForm';
 
 
 class App extends Component {
@@ -86,6 +87,7 @@ class App extends Component {
                         <Card />
                     </div>
                 </div>
+                <ModalForm />
             </div >
 
         );

@@ -1,12 +1,12 @@
 import React from "react";
 import './navbar.css';
-import Dashboard from '../images/Dashboard.svg';
-import Group from '../images/Group.svg';
-import Tactics from '../images/TacticsVault.svg';
-import Schedule from '../images/Schedule.svg';
-import Training from '../images/Training.svg';
-import Metrics from '../images/Metrics.svg';
-import Customizations from '../images/Customizations.svg';
+import Dashboard from '../../images/Dashboard.svg';
+import Group from '../../images/Group.svg';
+import Tactics from '../../images/TacticsVault.svg';
+import Schedule from '../../images/Schedule.svg';
+import Training from '../../images/Training.svg';
+import Metrics from '../../images/Metrics.svg';
+import Customizations from '../../images/Customizations.svg';
 
 
 const Navbar = () => {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addReminder, deleteReminder, clearReminders } from '../actions';
+import { addReminder, deleteReminder, clearReminders } from '../../actions';
 import moment from 'moment';
-import '../index.css';
-import Navbar from './Navbar.js';
-import Card from './Card.js';
-import '../custom.css';
+import '../../index.css';
+import Navbar from '../Navbar/Navbar.js';
+import Card from '../Card/Card.js';
+import '../../custom.css';
 
 
 class App extends Component {

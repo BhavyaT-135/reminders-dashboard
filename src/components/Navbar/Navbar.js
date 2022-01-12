@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
 
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand nav-link active" aria-current="page" href="#">
                             <img src={Schedule} alt="" width="30" height="24" class="d-inline-block align-text-top" />
                             Schedule Generator
                         </a>

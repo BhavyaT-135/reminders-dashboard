@@ -1,0 +1,56 @@
+.divider {
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: grey;
+    width: 100%;
+}
+
+.ui.card {
+    width: 95%;
+}
+
+.dates {
+    display: flex;
+    margin-left: 15px;
+}
+
+.start-date {
+    font-weight: bold;
+}
+
+.end-date {
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.btn-group {
+    margin-top: 50px;
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn.btn-outline-primary {
+    border-color: grey;
+    border-width: 1px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: grey;
+    font-size: 15px;
+}
+
+.btn.btn-outline-primary:hover{
+    color: #32cd32;
+    border-color: #32cd32;
+    border-width: 2px;
+}
+
+.btn-check:checked + .btn-outline-primary{
+    color: #32cd32;
+    border-color: #32cd32;
+    background-color: white;
+    border-width: 2px;
+}
+

@@ -1,16 +1,28 @@
 import React from 'react';
 import './card.css';
+import { MdDelete } from "react-icons/md";
+import { MdMode } from "react-icons/md";
 
 const UserCard = () => {
     return (
         <div className='ui card'>
             <div className='content'>
-                <div className='header'>Winter Training Schedule</div>
-                <div className='description' style={{ color: 'grey' }}>
-                    4 weeks | 12 sessions
+                <div className='left'>
+                    <div className='header'>Winter Training Schedule</div>
+                    <div className='description' style={{ color: 'grey' }}>
+                        4 weeks | 12 sessions
+                    </div>
                 </div>
-                <div className='divider'></div>
+                <div className='right'>
+                    <button className='edit-button'>
+                        <MdMode color='grey' size='35px' />
+                    </button>
+                    <button className='delete-button'>
+                        <MdDelete color='red' size='35px' />
+                    </button>
+                </div>
             </div>
+            <div className='divider'></div>
             <div className="dates">
                 <div className="start-date">
                     <div className='description' style={{ color: 'grey' }}>

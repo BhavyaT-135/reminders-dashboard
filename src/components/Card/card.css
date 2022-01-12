@@ -54,3 +54,31 @@
     border-width: 2px;
 }
 
+.header {
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex: 1;    
+}
+
+.right {
+    margin-left: 750px;
+    display: flex;
+    flex-direction: row;
+}
+
+.edit-button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+}
+
+.delete-button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+}

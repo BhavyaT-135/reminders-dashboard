@@ -10,7 +10,8 @@
 .nav.flex-column {
     background-color: #32CD32;
     width: fit-content;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     justify-content: space-between;
     padding: 20px;
     position: relative; 

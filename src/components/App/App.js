@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../index.css';
 import Navbar from '../Navbar/Navbar.js';
-import Card from '../Card/Card.js';
+import UserCard from '../Card/UserCard.js';
 import '../../custom.css';
 import ModalForm from '../ModalForm/ModalForm';
 import Header from '../Header/Header.js';
@@ -13,7 +13,24 @@ class App extends Component {
         super(props);
         this.state = {
             isModalOn: false,
+            todos: [{
+                Desc: 'Winter Training Schedule',
+                S_Date: '25-01-2020',
+                E_Date: '19-02-2020',
+                Weeks: '4',
+                id: 1
+            },
+            ]
         }
+    }
+
+    addTodos = (todo) => {
+        this.setState({
+            todos: [
+                ...this.state.todos,
+                todo
+            ]
+        });
     }
 
     setIsModalOn = () => {
@@ -28,7 +45,7 @@ class App extends Component {
         //console.log('State', this.state);
         return (
             <div className="App">
-                <ModalForm isModalOn={this.state.isModalOn} setIsModalOff={this.setIsModalOff} />
+                <ModalForm isModalOn={this.state.isModalOn} todos={this.state.todos} setIsModalOff={this.setIsModalOff} addTodos={this.addTodos} />
                 <div className='app-left'>
                     <Navbar />
                 </div>
@@ -55,8 +72,7 @@ class App extends Component {
                         >
                             Clear Reminders
                         </button>
-                        <Card />
-                        <Card />
+                        <UserCard todos={this.state.todos} />
                     </div>
                 </div>
             </div >

@@ -4,7 +4,7 @@ import { MdDelete } from "react-icons/md";
 import { MdMode } from "react-icons/md";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
-const Card = () => {
+const Card = (todo) => {
     const [show, setShow] = useState(false);
 
     const openDropdown = (event) => {
@@ -16,9 +16,9 @@ const Card = () => {
         <div className='ui card'>
             <div className='content'>
                 <div className='left'>
-                    <div className='header'>Winter Training Schedule</div>
+                    <div className='header'>{todo.todo.Desc}</div>
                     <div className='description' style={{ color: 'grey' }}>
-                        4 weeks | 12 sessions
+                        {todo.todo.Weeks} | 12 sessions
                     </div>
                 </div>
                 <div className='right'>

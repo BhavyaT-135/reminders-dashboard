@@ -49,13 +49,13 @@ const Card = (todo) => {
                                     <div className='description' style={{ color: 'grey' }}>
                                         Start Date
                                     </div>
-                                    <div className='s-date'>25 January 2020</div>
+                                    <div className='s-date'>{todo.todo.S_Date}</div>
                                 </div>
                                 <div className="end-date">
                                     <div className='description' style={{ color: 'grey' }}>
                                         End Date
                                     </div>
-                                    <div className='e-date'>19 February 2020</div>
+                                    <div className='e-date'>{todo.todo.E_Date}</div>
                                 </div>
                                 <div className='update_button'>
                                     <button class="ui green button">Update</button>

@@ -23,13 +23,13 @@ const Card = (todo) => {
             {deleteCard && (
                 <div className='ui card'>
                     <div className='content'>
-                        <div className='left'>
+                        <div className='left-card'>
                             <div className='header'>{todo.todo.Desc}</div>
                             <div className='description' style={{ color: 'grey' }}>
                                 {todo.todo.Weeks} | 12 sessions
                             </div>
                         </div>
-                        <div className='right'>
+                        <div className='right-card'>
                             <button className='edit-button'>
                                 <MdMode color='grey' size='25px' />
                             </button>
